@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan&family=Noto+Sans+Symbols:wght@300;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2D4480;
+    font-family: 'Noto Sans Symbols', sans-serif;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 5px 20px 50px 0px rgba(0, 0, 0, 0.60);
+    width: 288px;
+    height: 469px;
+    border-radius: 27px;
+    position: relative;
+}
+
+.card h1,
+.card .features,
+.card .free {
+    margin-left: 95px;
+}
+
+.card h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+
+.card .features {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    margin-top: 28px;
+}
+
+.features .feature {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+}
+
+.features img {
+    width: 20px;
+    height: 20px;
+    margin-right: 23px;
+    margin-left: -41px;
+}
+
+body hr {
+    margin-top: 27px;
+    margin-bottom: 8px;
+    margin-left: 50px;
+    width: 188px;
+}
+
+.card .free {
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin-top: -25px;
+    margin-left: 100px;
+}
+
+.card .forever {
+    margin-top: -15px;
+    margin-left: 132px;
+    font-family: 'Allan', sans-serif;
+    color: #2D4480;
+    font-size: 2.25rem;
+}
+
+.card button {
+    width: 181px;
+    height: 68px;
+    text-decoration: none;
+    background-color: #FFBC0F;
+    border-radius: 34px;
+    font-size: 1rem;
+    border: none;
+    color: #253868;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 55px;
+    position: absolute;
+    bottom: -7%;
+    left: 0%;
+}
+
+.card button:hover {
+    opacity: .9;
+}

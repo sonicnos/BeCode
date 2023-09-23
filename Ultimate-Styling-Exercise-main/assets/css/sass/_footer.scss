@@ -1,0 +1,76 @@
+@import '02-variables';
+@import '03-mixin';
+
+.footer {
+    .container{
+        padding-top: 115px;
+        max-width: 1000px;
+        margin: 0 auto;
+        @include Logo;
+        display: flex;
+        flex-direction: column;
+        }
+
+        .top {
+            display: flex;
+            justify-content: flex-start;
+            gap: 180px;
+
+            .menu {
+                @include ListFooter;
+            }
+    
+            .service {
+                @include ListFooter;
+            }
+    
+            .icons {
+                display: flex;
+                gap: 8px;
+    
+                .icon {
+                    background-color: #6357F6;
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 48px;
+                    
+                }
+            }
+        }
+
+        .line {
+            width: 100%;
+            border-top: 1px solid #ffffff41;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            
+
+            .copyright {
+                color: rgba(255, 255, 255, 0.50);
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+            }
+        }
+
+        .links {
+            display: flex;
+            gap: 48px;
+            a{
+                color: #FFF;
+                text-align: right;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+            }
+        }
+    }

@@ -1,0 +1,43 @@
+@import '02-variables';
+@import '03-mixin';
+
+header {
+    .container {
+        position: relative;
+        padding-top: 30px;
+        @include FlexAllCenter;
+        @include MarginHeader;
+        @include Logo;
+        overflow: hidden;
+
+
+        .navigation {
+
+            ul {
+                @include FlexAllCenter();
+                gap: 30px;
+
+                li {
+
+                    a {
+                        color: $white;
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        body::before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 747px;
+            background-image: url(/assets/image/deco1.png);
+            top: -114px;
+            left: 729px;
+        }
+    }
+
+
+}

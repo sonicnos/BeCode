@@ -1,0 +1,82 @@
+
+@import '02-variables';
+@import '03-mixin';
+
+.awesome-article{
+    padding-top: 120px;
+
+    .container {
+        @include MarginHeader;
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        position: relative;
+
+        .title {
+            color: $white;
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 2.88px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            color: $yellow;
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: 1.44px;
+            text-transform: uppercase;
+        }
+
+        .description {
+            padding-left: 4px;
+            width: 410px;
+            color: #EFEFEF;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 32px;
+            letter-spacing: 0.72px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 25px;
+
+            .red-btn {
+                @include btn;
+                background-color: $red;
+                color: $white;  
+            }
+
+            .white-btn{
+                @include btn;
+                background-color: #EFEFEF;
+                color: $black;
+            }
+        }
+    }
+    .container::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 142px;
+        height: 153px;
+        background-image: url(/assets/image/deco3-1.png);
+        top: -47px;
+        left: -44px;
+    }
+    
+    .container::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 184px;
+        height: 181px;
+        background-image: url(/assets/image/deco2.png);
+        top: 214px;
+        left: 306px;
+    }
+}
+

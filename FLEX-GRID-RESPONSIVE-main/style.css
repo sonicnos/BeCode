@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+    --Almost-White: #FFFDFA;
+    --Dark-Space-Blue: #00001A;
+    --Gunmetal: #5E607A;
+    --Silver: #C5C6CE;
+    --Light-Vermillion: #F15D51;
+    --Yellow: #E9AA52;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+header,
+main,
+section {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header {
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    width: 64.092px;
+    height: 39.9px;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px
+}
+
+nav ul li {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00001A;
+}
+
+nav img {
+    display: none;
+}
+
+main{
+    margin-bottom: 72px;
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+main .left {
+
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    gap: 30px 30px;
+    grid-template-areas: 
+    "picture picture"
+    "title description"; 
+}
+
+main .left .picture { 
+    grid-area: picture; 
+}
+
+main .left .picture img[alt="unsplash-mobile"] {
+display: none;
+}
+
+main .left .title { 
+    grid-area: title; 
+    width: 350px;
+}
+
+main .left .title h1 {
+    font-weight: 800;
+    font-size: 3.50rem;
+}
+
+main .left .description { 
+    width: 350px;
+    grid-area: description; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .left .description p {
+    color: var(--Gunmetal);
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 26px;
+}
+
+main .left a {
+    background-color: var(--Light-Vermillion);
+    width: 185px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 4.375px;
+    color: var(--Almost-White);
+}
+
+main .right {
+    background-color: var(--Dark-Space-Blue);
+    width: 350px;   
+}
+
+main .right h1,
+main .right h2,
+main .right p,
+main .right span {
+    margin: 0 auto;
+    max-width: 302px;
+}
+
+main .right h1 {
+    color: var(--Yellow);
+    margin: 32px auto 34px;
+}
+
+main .right h2 {
+    color: var(--Almost-White);
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+main .right p {
+    color: var(--Silver);
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 26px;
+}
+
+main .right span {
+    display: block;
+    margin: 29px auto 31px;
+    border-top: 1px solid var(--Silver);
+}
+
+section .container {
+    display: flex;
+}
+
+section .container .items1, 
+section .container .items2, 
+section .container .items3 {
+    display: flex;
+    gap: 20px
+}
+
+section .container .items1 h1, 
+section .container .items2 h1, 
+section .container .items3 h1 {
+    color: var(--Silver);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+section .container .items1 a,
+section .container .items2 a,
+section .container .items3 a {
+    width: 226px;
+    color: var(--Dark-Space-Blue);
+    font-weight: 800;
+    line-height: 24px;
+    font-size: 1.125rem;
+}
+
+section .container .items1 p,
+section .container .items2 p,
+section .container .items3 p {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--Gunmetal);
+}
+
+@media (max-width: 375px) {
+    nav ul {
+        display: none;
+    }
+
+    nav img {
+        display: inline;
+        height: 17px;
+    }
+
+    header .container {
+        height: 28px;
+        display: flex;
+    }
+
+    main .container {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    main .container .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .container .left .picture img[alt="unsplash-desktop"] {
+        display: none;
+    }
+
+    main .container .left .picture img[alt="unsplash-mobile"] {
+        display: inline;
+    }
+
+    main .container .left .title{
+        font-size: 2.50rem;
+        font-weight: 800;
+        line-height: 50px;
+    }
+
+    main .container .right {
+        width: 100%;
+    }
+
+    section .container {
+        flex-direction: column;
+        gap: 32px;
+    }
+}

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@400;800&display=swap');
+
+:root {
+    --blue: #007DFC;
+    --yellow: #FFB800;
+    --dark-grey: #232323;
+    --grey: #3A3D46;
+    --light-grey: #949494;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+}
+
+header{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: var(--grey);
+}
+
+.container,
+.last-news {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+
+header .container {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header img[alt="logo"]{
+    width: 151px;
+}
+
+nav ul{
+    list-style: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+nav ul .active {
+    width: 64px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: var(--blue);
+    margin-right: -10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    color: white;
+}
+
+.ipsum-news {
+    background-color: var(--dark-grey);
+    height: 630px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.ipsum-news .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.ipsum-news .left {
+    max-width: 85%;
+}
+
+.ipsum-news .left h1 {
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.ipsum-news .left h1 span {
+    color: var(--yellow);
+}
+
+.ipsum-news .left h2 {
+    color: var(--blue);
+    font-size: 1.625rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 22px;
+}
+
+.ipsum-news .left .text-line {
+    display:block;
+    width:100%;
+    border-top: 1px solid var(--light-grey);
+    margin-bottom: 22px;
+}
+
+.ipsum-news .left p {
+    width: 387px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    margin-bottom: 33px;
+}
+
+.ipsum-news .left a {
+    color: black;
+    background-color: var(--yellow);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px 27px;
+    border-radius: 45px;
+}
+
+.last-news .title h1 {
+    margin-top: 82px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.750rem;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.56px;
+}
+
+.last-news .title span {
+    display:block;
+    width: 145px;
+    border-top: 1px solid var(--light-grey);
+    transform: translateX(48px);
+    margin-bottom: 50px;
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .main-article {
+    grid-row: 1/3;
+  }

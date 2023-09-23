@@ -1,0 +1,96 @@
+@mixin Logo {
+    .logo {
+        a {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 2rem;
+            span {
+                color: $red;
+            }
+        }
+    } 
+}
+
+@mixin MarginHeader {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@mixin FlexAllCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+@mixin btn {
+    border: none;
+    border-radius: 75px;
+    width: 152px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.63px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@mixin card {
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    background: linear-gradient(180deg, #4D4F95 0%, #2B2D66 100%);
+    box-shadow: 0px 24px 48px 0px rgba(0, 1, 44, 0.16);
+
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        margin-top: 38px;
+        padding-left: 30px;
+        color: $white;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+    }
+
+    p {
+        margin-top: 20px;
+        padding-left: 30px;
+        color: rgba(255, 255, 255, 0.50);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+    }
+}
+
+@mixin ListFooter {
+    h3 {
+        color: rgba(255, 255, 255, 0.50);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    ul {
+        li {
+            a{
+                color: #FFF;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+            }
+        }
+    }
+}
