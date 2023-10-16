@@ -1,0 +1,23 @@
+@import '02_variables', '03_mixin';
+
+.fourth-section {
+    @include maxWidth1200Margin0Auto;
+    @include displayFlexRowSpaceBetween;
+
+    .fourth-section-right {
+        .title {
+            font-size: 2.5rem;
+            max-width: 470px;
+            margin-bottom: 30px;
+        }
+
+        .title::before {
+            @include positioningAfterBefore; 
+            
+        }
+        .description {
+            max-width: 540px;
+            color: $greyDark;
+        }
+    }
+}
