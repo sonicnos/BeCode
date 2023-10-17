@@ -87,6 +87,7 @@ header nav .menu ul li a {
 }
 .first-section article .first-section-description {
   padding-top: 120px;
+  position: relative;
 }
 .first-section article .first-section-description .first-section-title {
   font-size: 2.5rem;
@@ -115,7 +116,8 @@ header nav .menu ul li a {
   background-image: url(../images/Dot.png);
   top: 466px;
   z-index: -1;
-  left: 63px;
+  top: 392px;
+  left: -54px;
 }
 .first-section article .first-section-description .contact-btn-description::after {
   content: "";
@@ -126,7 +128,8 @@ header nav .menu ul li a {
   background-image: url(../images/Dot.png);
   top: 466px;
   z-index: -1;
-  left: 274px;
+  left: 160px;
+  top: 392px;
 }
 .first-section article .first-section-description .popup {
   position: fixed;
@@ -475,7 +478,24 @@ header nav .menu ul li a {
   flex-direction: row;
   justify-content: space-between;
 }
+.fourth-section .video {
+  position: relative;
+}
+.fourth-section .video iframe {
+  border-radius: 32px;
+}
+.fourth-section .video::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-image: url(../images/Ellipse4.png);
+  width: 129px;
+  height: 129px;
+  top: 243px;
+  left: 463px;
+}
 .fourth-section .fourth-section-right .title {
+  position: relative;
   font-size: 2.5rem;
   max-width: 470px;
   margin-bottom: 30px;
@@ -484,10 +504,17 @@ header nav .menu ul li a {
   content: "";
   position: absolute;
   z-index: -1;
+  background-image: url(../images/Rectangle4.png);
+  width: 178px;
+  height: 178px;
+  top: -14px;
+  left: -38px;
 }
 .fourth-section .fourth-section-right .description {
   max-width: 540px;
   color: #565656;
+  font-size: 1rem;
+  line-height: 160%;
 }
 
 body {
