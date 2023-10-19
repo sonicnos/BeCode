@@ -16,15 +16,20 @@
 //     asyncCall();
 
 const body = document.querySelector("body");
-console.log(body);
-let colorBg = (body.style.background = "black");
 
-function changeBG(color) {
+function changeBG(color, delay) {
   return new Promise((resolve) => {
     setTimeout(() => {
-      colorBg = color;
-    }, 10);
+      resolve((body.style.backgroundColor = color));
+    }, delay);
   });
 }
 
-changeBG("red");
+async function f1() {
+  const colors = ["yellow", "red", "cyan", "violet", "green", "purple"];
+  for (i = 0; i < colors.length; i++) {
+    await changeBG(colors[i], 1000);
+  }
+}
+
+f1();
