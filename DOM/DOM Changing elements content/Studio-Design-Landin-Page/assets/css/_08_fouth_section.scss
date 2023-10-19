@@ -1,7 +1,7 @@
 @import '02_variables', '03_mixin';
 
 .fourth-section {
-    @include maxWidth1200Margin0Auto;
+    @include maxWidthMargin0Auto (1200px);
     @include displayFlexRowSpaceBetween;
     .video{
         position: relative;
