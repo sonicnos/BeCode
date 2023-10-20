@@ -33,11 +33,16 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 30px;
+            grid-template-rows: repeat(2, 1fr);
+            position: relative;
           
             .business{
                 grid-column: 1;
                 grid-row: 1/2;
                 @include boxPreset(#f1f7ff);
+                position: absolute;
+                top: 10px;
+
             }
 
             .development {
