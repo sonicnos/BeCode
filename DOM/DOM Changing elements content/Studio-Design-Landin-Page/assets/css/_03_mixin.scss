@@ -14,8 +14,8 @@
     flex-direction: column;
 }
 
-@mixin maxWidth1200Margin0Auto {
-    max-width: 1200px;
+@mixin maxWidthMargin0Auto ($width: 1200px){
+    max-width: $width;
     margin: 0 auto;
 }
 

@@ -2,7 +2,7 @@
 
 header {
     nav{
-        @include maxWidth1200Margin0Auto;
+        @include maxWidthMargin0Auto (1200px);
         @include displayFlexRow;
         justify-content: space-between;
         margin-bottom: 45px;
