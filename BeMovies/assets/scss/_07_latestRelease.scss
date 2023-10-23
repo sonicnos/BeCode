@@ -1,0 +1,26 @@
+@import '01_reset', '02_variable';
+
+.latest-release {
+    @include resetSection;
+    margin-bottom: 95px;
+
+    .latest-release-p {
+        @include textStyling;
+        margin-bottom: 10px;
+    }
+
+    .display-latest-release {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        @include displayFlexAllCenter;
+    }
+
+    .grid-latest-release {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}

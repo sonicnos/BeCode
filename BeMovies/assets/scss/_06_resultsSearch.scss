@@ -1,0 +1,26 @@
+@import '01_reset', '02_variable';
+
+.results-search {
+    @include resetSection;
+    margin-bottom: 90px;
+
+    .search-p {
+        @include textStyling;
+        margin-bottom: 10px;
+    }
+    
+    .display-results {
+        display: flex;
+        justify-content: space-between;
+        
+        a {
+            @include displayFlexAllCenter;
+        }
+
+        .grid-results {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+    }
+}

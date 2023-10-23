@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;700&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;700&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;700&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;700&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;700&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;700&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;700&family=Inter&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: #141517;
+  height: 100px;
+  font-family: "Inria Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+nav a {
+  color: #fff;
+}
+nav .nav-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-container .logo {
+  font-size: 2.25rem;
+}
+nav .nav-container .logo span {
+  color: #C00;
+}
+nav .nav-container ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: 0.875rem;
+  letter-spacing: 0.42px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.search-bar-container {
+  height: 180px;
+  max-width: 275px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar-container .search-bar-box {
+  height: 44px;
+  display: flex;
+}
+.search-bar-container .search-bar-box #search-bar {
+  width: 228px;
+  border-radius: 8px 0px 0px 8px;
+  outline: none;
+  border: none;
+  padding-left: 18px;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-style: normal;
+}
+.search-bar-container .search-bar-box #search-bar::-moz-placeholder {
+  opacity: 0.9;
+}
+.search-bar-container .search-bar-box #search-bar::placeholder {
+  opacity: 0.9;
+}
+.search-bar-container .search-bar-box button {
+  border: none;
+  width: 44px;
+  background-color: #C00;
+  border-radius: 0px 8px 8px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar-container .search-bar-box button img {
+  width: 18px;
+  height: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.results-search {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+.results-search .search-p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 10px;
+}
+.results-search .display-results {
+  display: flex;
+  justify-content: space-between;
+}
+.results-search .display-results a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.results-search .display-results .grid-results {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.latest-release {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 95px;
+}
+.latest-release .latest-release-p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 10px;
+}
+.latest-release .display-latest-release {
+  display: flex;
+  justify-content: space-between;
+}
+.latest-release a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.latest-release .grid-latest-release {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.movie-by-genre {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 110px;
+}
+.movie-by-genre .movie-by-genre-title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin-bottom: 46px;
+}
+.movie-by-genre .genre-category {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  margin-bottom: 25px;
+}
+.movie-by-genre .genre-category li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+.movie-by-genre .genre-category .active {
+  background-color: #C00;
+  width: 84px;
+  height: 33px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.movie-by-genre .horizontal-bar {
+  width: 599px;
+  height: 2px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #141517;
+  height: 100px;
+  font-family: "Inria Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+footer a {
+  color: #fff;
+}
+footer .footer-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-container .logo {
+  font-size: 2.25rem;
+}
+footer .footer-container .logo span {
+  color: #C00;
+}
+footer .footer-container ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: 0.875rem;
+  letter-spacing: 0.42px;
+}
+footer .footer-container p {
+  color: #B8B8B8;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+body {
+  height: 100vh;
+  background-color: #191B20;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,11 @@
+@import '01_reset', '02_variable';
+
+nav {
+    @include setNavBar;
+    
+    .nav-container {
+        @include navBarContainer;
+    }
+
+    
+}
