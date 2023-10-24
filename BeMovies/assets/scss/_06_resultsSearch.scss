@@ -5,11 +5,12 @@
     margin-bottom: 90px;
 
     .search-p {
-        @include textStyling;
-        margin-bottom: 10px;
+        @include textStyling(1rem, 400);
+        @include min-width (1000px);
     }
     
     .display-results {
+        margin-top: 10px;
         display: flex;
         justify-content: space-between;
         
@@ -21,6 +22,52 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
+            position: relative;
+
+            .slide-1 {
+                position: relative;
+                @include displayFlexAllCenter;
+
+                div {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include displayFlexAllCenter;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 235px;
+
+                    h2, h3, .movie-category, .review {
+                        text-align: center;
+                        width: 160px;
+                    }
+
+                    h2 {
+                        @include textStyling(1.25rem, 700);
+
+                    }
+
+                    h3{
+                        @include textStyling(1.25rem, 700);
+                        color: $grey;
+                    }
+
+                    .movie-category {
+                        @include textStyling(0.875rem, 500);
+                    }
+
+                    .review {
+                        @include textStyling(2rem, 700);
+                        color: $red;
+                    }
+                }
+            }
+
+            .slide-2 {
+                
+            }
+
+
         }
     }
 }

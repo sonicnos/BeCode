@@ -5,11 +5,12 @@
     margin-bottom: 95px;
 
     .latest-release-p {
-        @include textStyling;
-        margin-bottom: 10px;
+        @include textStyling(1rem, 400);
+        @include min-width (1000px);
     }
 
     .display-latest-release {
+        margin-top: 10px;
         display: flex;
         justify-content: space-between;
     }

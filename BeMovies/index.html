@@ -23,10 +23,10 @@
         </div>
     </nav>
     <section class="search-bar-container">
-        <div class="search-bar-box">
+        <form class="search-bar-box">
             <input type="text" placeholder="Search a movie" id="search-bar">
             <button type="submit" id="submit-btn"><img src="./assets/images/submit-vector.png" alt="submit-btn"></button>
-        </div>
+        </form>
     </section>
     <section class="results-search">
         <p class="search-p">Results for “<span class="search-bar-value"></span>”</p>
@@ -35,6 +35,13 @@
             <div class="grid-results">
                 <div class="slide-1">
                     <img src="./assets/images/img-slide-test.png" alt="">
+                    <div class="slide-card-1">
+                        <h2 class="movie-title">The Godfather part III</h2>
+                        <h3 class="movie-release-date">1990</h3>
+                        <p class="movie-category">Crime / Drama / Thriller</p>
+                        <p class="star"><img src="./assets/images/star.png" alt="star"></p>
+                        <p class="review">7.4</p>
+                    </div>
                 </div>
                 <div class="slide-2">
                     <img src="./assets/images/img-slide-test.png" alt="">
@@ -85,7 +92,7 @@
 
         <div class="horizontal-bar"></div>
         <div class="latest-release">
-            <p>Comedy</p>
+            <p class="category-p">Comedy</p>
             
             <div class="display-latest-release">
                 <a href="#"><img src="./assets/images/left-vector.png" alt="vector-left"></a>
@@ -124,6 +131,12 @@
             <p>&#169;2023 - All rights reserved</p>
         </div>
     </footer>
+
+    <dialog data-modal class="modal">
+        <div class="">this is a modal</div>
+        <button data-close-modal></button>
+
+    </dialog>
 
 </body>
 </html>

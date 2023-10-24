@@ -144,6 +144,9 @@ header nav .menu ul li a {
   width: 500px;
   max-width: 80%;
 }
+.first-section article .first-section-description .popup::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 .first-section article .first-section-description .popup.active {
   transform: translate(-50%, -50%) scale(1);
 }

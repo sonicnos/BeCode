@@ -3,16 +3,21 @@
     margin: 0 auto;
 }
 
+@mixin min-width ($width) {
+    min-width: $width;
+    margin: 0 auto;
+}
+
 @mixin displayFlexAllCenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@mixin textStyling {
+@mixin textStyling ($fontSize, $fontWeight) {
     color: $white;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
     font-family: 'Inter', sans-serif;
 }
 
@@ -58,3 +63,8 @@
         letter-spacing: 0.42px;
     }
 }
+
+@mixin postionHover {
+
+}
+                

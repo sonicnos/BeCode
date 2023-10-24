@@ -5,7 +5,7 @@
     margin-bottom: 110px;
     
     .movie-by-genre-title {
-        @include textStyling;
+        @include textStyling(1rem, 400);
         text-align: center;
         margin-bottom: 46px;
     }
@@ -20,7 +20,7 @@
 
         li {
             @include displayFlexAllCenter;
-            @include textStyling;
+            @include textStyling(1rem, 400);
         }
 
         .active {
@@ -39,5 +39,11 @@
         background-color: $white;
         @include centerContainer(1200px);
         margin-bottom: 60px;
+    }
+
+    .category-p {
+        @include min-width(1000px);
+        @include textStyling(1rem, 400);
+        margin-bottom: 10px;
     }
 }
