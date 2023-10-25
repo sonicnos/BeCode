@@ -1,21 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -57,17 +40,6 @@ nav .nav-container ul {
   gap: 30px;
   font-size: 0.875rem;
   letter-spacing: 0.42px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 .search-bar-container {
@@ -112,17 +84,6 @@ a {
 .search-bar-container .search-bar-box button img {
   width: 18px;
   height: 14px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 .results-search {
@@ -203,17 +164,6 @@ a {
   font-family: "Inter", sans-serif;
   color: #C00;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .latest-release {
   max-width: 1200px;
   margin: 0 auto;
@@ -243,17 +193,6 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 .movie-by-genre {
@@ -309,17 +248,6 @@ a {
   margin-bottom: 10px;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 footer {
   background-color: #141517;
   height: 100px;
@@ -355,6 +283,76 @@ footer .footer-container p {
   color: #B8B8B8;
   font-size: 0.875rem;
   font-weight: 300;
+}
+
+.modal {
+  max-width: 410px;
+  margin: 0 auto;
+  height: 600px;
+  background-color: orange;
+}
+.modal .close-button {
+  width: 16px;
+  height: 16px;
+}
+.modal .btnTab {
+  display: flex;
+  height: 54px;
+  max-width: 290px;
+  margin: 0 auto;
+  margin-bottom: 54px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.modal .btnTab a {
+  color: #fff;
+  width: 146px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.72px;
+}
+.modal .btnTab .login {
+  background-color: #C00;
+  border-radius: 0px 8px 8px 0px;
+}
+.modal .btnTab .signup {
+  border: 1px solid #fff;
+  border-radius: 8px 0px 0px 8px;
+}
+.modal form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 290px;
+  margin: 0 auto;
+  gap: 25px;
+}
+.modal form input[type=text],
+.modal form input[type=password] {
+  border: none;
+  outline: none;
+  width: 250px;
+  height: 44px;
+  border-radius: 8px;
+  color: black;
+  font-weight: 400;
+  font-size: 1rem;
+  padding-left: 20px;
+}
+.modal > * {
+  margin: 0 0 0.5rem 0;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 body {

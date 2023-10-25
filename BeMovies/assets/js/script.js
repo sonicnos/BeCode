@@ -1,19 +1,21 @@
 const searchBar = document.getElementById('search-bar');
 const submitBtn = document.getElementById('submit-btn');
 const resultsDisplayValue = document.querySelector('.search-bar-value');
-const openBtn = document.querySelector("data-open-modal");
-const closeBtn = document.querySelector("data-close-modal");
-const modal = document.querySelector("data-modal");
-const overlay = document.querySelector("data-overlay");
+const modal = document.querySelector("#modal");
+const closeModal = document.querySelector(".close-button");
+const registerBtn = document.querySelector(".open-button");
 
 
 submitBtn.addEventListener ('click', (e) => {
+    e.preventDefault;
     resultsDisplayValue.innerText = searchBar.value;
 });
 
-openBtn.addEventListener("click", () => {
-    modal.classList.add("open");
-    overlay.classList.add("open");
-});
+registerBtn.addEventListener("click", (e) => {
+    modal.showModal();
+    console.log('works register');
+  });
 
-closeBtn.addEventListener('click', () =>)
+closeModal.addEventListener("click", () => {
+    modal.close();
+  });

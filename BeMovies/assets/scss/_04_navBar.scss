@@ -1,4 +1,4 @@
-@import '01_reset', '02_variable';
+@import '02_variable', '03_mixin';
 
 nav {
     @include setNavBar;

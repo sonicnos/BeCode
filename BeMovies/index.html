@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeMovies</title>
-    <script src="./assets/js/script.js" defer></script>
+    
     <link rel="stylesheet" href="assets/scss/main.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
                 <li><a href="#">Search</a></li>
                 <li><a href="#">Latest</a></li>
                 <li><a href="#">Genres</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="#" class="open-button">Register</a></li>
                 <li><a href="#">Signin</a></li>
             </ul>
         </div>
@@ -125,18 +125,37 @@
                 <li><a href="#">Search</a></li>
                 <li><a href="#">Latest</a></li>
                 <li><a href="#">Genres</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="#" class="open-button">Register</a></li>
                 <li><a href="#">Signin</a></li>
             </ul>
             <p>&#169;2023 - All rights reserved</p>
         </div>
     </footer>
 
-    <dialog data-modal class="modal">
-        <div class="">this is a modal</div>
-        <button data-close-modal></button>
+    <dialog class="modal" id="modal">
+        <img src="./assets/images/cross.png" alt="cross" class="button close-button">
+        <div class="btnTab">
+            <a href="#" class="signup">Signup</a>
+            <a href="#" class="login">Login</a>
+        </div>
+        <form>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <div class="remember">
+                <input type="checkbox" name="remember" id="">
+                <label for="remember">Remember me</label>
+            </div>
+            
+        </form>
+        <button type="submit">Login</button>
+        <a href="#"I forgot my password></a>
+        <p>Not a member yer ? <a href="#">Sign up</a></p>
 
+       
     </dialog>
+
+
+    <script src="./assets/js/script.js"></script>
 
 </body>
 </html>
