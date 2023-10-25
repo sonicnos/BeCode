@@ -286,10 +286,12 @@ footer .footer-container p {
 }
 
 .modal {
-  max-width: 410px;
-  margin: 0 auto;
-  height: 600px;
-  background-color: orange;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 650px;
+  background-color: black;
 }
 .modal .close-button {
   width: 16px;
@@ -300,9 +302,7 @@ footer .footer-container p {
   height: 54px;
   max-width: 290px;
   margin: 0 auto;
-  margin-bottom: 54px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 65px 50px 54px 50px;
 }
 .modal .btnTab a {
   color: #fff;
@@ -347,6 +347,48 @@ footer .footer-container p {
   font-size: 1rem;
   padding-left: 20px;
 }
+.modal form .remember label {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+.modal .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.modal .bottom button {
+  border: none;
+  outline: none;
+  width: 288px;
+  height: 47px;
+  max-width: 290px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  background-color: #C00;
+  border-radius: 8px;
+}
+.modal .bottom .signup {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  gap: 19px;
+}
+.modal .bottom .signup p {
+  margin-top: 19px;
+}
+.modal .bottom .signup a {
+  color: #C00;
+}
 .modal > * {
   margin: 0 0 0.5rem 0;
 }
@@ -358,4 +400,5 @@ footer .footer-container p {
 body {
   height: 100vh;
   background-color: #191B20;
+  position: relative;
 }/*# sourceMappingURL=main.css.map */

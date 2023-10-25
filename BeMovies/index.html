@@ -17,7 +17,7 @@
                 <li><a href="#">Search</a></li>
                 <li><a href="#">Latest</a></li>
                 <li><a href="#">Genres</a></li>
-                <li><a href="#" class="open-button">Register</a></li>
+                <li><a href="#" class="open-button-register">Register</a></li>
                 <li><a href="#">Signin</a></li>
             </ul>
         </div>
@@ -33,7 +33,7 @@
         <div class="display-results">
             <a href="#"><img src="./assets/images/left-vector.png" alt="vector-left"></a>
             <div class="grid-results">
-                <div class="slide-1">
+                <div class="slide-1" class="open-button-register">
                     <img src="./assets/images/img-slide-test.png" alt="">
                     <div class="slide-card-1">
                         <h2 class="movie-title">The Godfather part III</h2>
@@ -125,14 +125,14 @@
                 <li><a href="#">Search</a></li>
                 <li><a href="#">Latest</a></li>
                 <li><a href="#">Genres</a></li>
-                <li><a href="#" class="open-button">Register</a></li>
+                <li><a href="#" class="open-button-register">Register</a></li>
                 <li><a href="#">Signin</a></li>
             </ul>
             <p>&#169;2023 - All rights reserved</p>
         </div>
     </footer>
 
-    <dialog class="modal" id="modal">
+    <dialog class="modal-register" id="modal-register">
         <img src="./assets/images/cross.png" alt="cross" class="button close-button">
         <div class="btnTab">
             <a href="#" class="signup">Signup</a>
@@ -147,11 +147,19 @@
             </div>
             
         </form>
-        <button type="submit">Login</button>
-        <a href="#"I forgot my password></a>
-        <p>Not a member yer ? <a href="#">Sign up</a></p>
+        <div class="bottom">
+            <button type="submit">Login</button>
+            <div class="signup">
+                <a href="#">I forgot my password</a>
+                <p>Not a member yer ? <a href="#">Sign up</a></p>
+            </div>
 
-       
+        </div>
+    </dialog>
+
+    <dialog class="modal-movie" id="modal-movie">
+        <img src="./assets/images/cross.png" alt="cross" class="button close-button">
+        <p>movies</p>
     </dialog>
 
 
