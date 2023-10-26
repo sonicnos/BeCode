@@ -1,7 +1,7 @@
 const searchBar = document.getElementById('search-bar');
 const submitBtn = document.getElementById('submit-btn');
 const resultsDisplayValue = document.querySelector('.search-bar-value');
-const registerModal = document.querySelector("#modal-register");
+const modal = document.querySelector("#modal-register");
 const closeModal = document.querySelector(".close-button");
 const registerBtn = document.querySelector(".open-button-register");
 
