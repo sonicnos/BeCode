@@ -1,1 +1,2 @@
-console.log("it's works");
+console.log(__dirname);
+console.log(__filename);
