@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeMovies</title>
-    
+    <title>BeMovies</title> 
+    <script src="./assets/src/jquery/jquery.min.js"></script>
+    <!-- ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/scss/main.css">
 </head>
 <body>
@@ -15,71 +19,44 @@
             </div>
             <ul>
                 <li><a href="#">Search</a></li>
-                <li><a href="#">Latest</a></li>
-                <li><a href="#">Genres</a></li>
+                <li><a href="#latest">Latest</a></li>
+                <li><a href="#genres">Genres</a></li>
                 <li><a href="#" class="open-button-register">Register</a></li>
-                <li><a href="#">Signin</a></li>
+                <li><a href="#" class="open-button-signin">Signin</a></li>
             </ul>
         </div>
     </nav>
     <section class="search-bar-container">
-        <form class="search-bar-box">
-            <input type="text" placeholder="Search a movie" id="search-bar">
+        <form class="search-bar-box" action="#">
+            <input type="text" placeholder="Search a movie" name="searchBar" id="search-bar">
             <button type="submit" id="submit-btn"><img src="./assets/images/submit-vector.png" alt="submit-btn"></button>
         </form>
     </section>
-    <section class="results-search">
+
+
+    <section class="results-search bloc_swiper">
         <p class="search-p">Results for “<span class="search-bar-value"></span>”</p>
-        <div class="display-results">
-            <a href="#"><img src="./assets/images/left-vector.png" alt="vector-left"></a>
-            <div class="grid-results">
-                <div class="slide-1" class="open-button-register">
-                    <img src="./assets/images/img-slide-test.png" alt="">
-                    <div class="slide-card-1">
-                        <h2 class="movie-title">The Godfather part III</h2>
-                        <h3 class="movie-release-date">1990</h3>
-                        <p class="movie-category">Crime / Drama / Thriller</p>
-                        <p class="star"><img src="./assets/images/star.png" alt="star"></p>
-                        <p class="review">7.4</p>
-                    </div>
-                </div>
-                <div class="slide-2">
-                    <img src="./assets/images/img-slide-test.png" alt="">
-                </div>
-                <div class="slide-3">
-                    <img src="./assets/images/img-slide-test.png" alt="">
-                </div>
-                <div class="slide-4">
-                    <img src="./assets/images/img-slide-test.png" alt="">
-                </div>
-            </div>
-            <a href="#"><img src="./assets/images/right-vector.png" alt="vector-right"></a>
+            <a class="search_next swiper-button-next"><img src="./assets/images/right-vector.png" alt="vector-right"></a>
+        <div class="display swiper swiper_search">
+            <div class="grid swiper-wrapper"></div>
         </div>
+            <a class="search_prev swiper-button-prev"><img src="./assets/images/left-vector.png" alt="vector-left"></a>
     </section>
 
-    <section class="latest-release">
-        <p class="latest-release-p">Latest releases</p>
-        <div class="display-latest-release">
-            <a href="#"><img src="./assets/images/left-vector.png" alt="vector-left"></a>
-            <div class="grid-latest-release">
-                <div class="slide-1">
-                    <img src="./assets/images/img-slide-test.png" alt="">
-                </div>
-                <div class="slide-2">
-                    <img src="./assets/images/img-slide-test.png" alt="">
-                </div>
-                <div class="slide-3">
-                    <img src="./assets/images/img-slide-test.png" alt="">
-                </div>
-                <div class="slide-4">
-                    <img src="./assets/images/img-slide-test.png" alt="">
-                </div>
-            </div>
-            <a href="#"><img src="./assets/images/right-vector.png" alt="vector-right"></a>
+
+    <section class="latest-release bloc_swiper">
+        <p class="latest-release-p" id="latest">Latest releases</p>
+        <a class="release-next swiper-button-next" href="#">
+            <img src="./assets/images/right-vector.png" alt="vector-right"></a>
+        <div class="display swiper swiper_release">
+            <div class="grid swiper-wrapper"></div>
         </div>
+        <a class="release-prev swiper-button-prev" href="#">
+            <img src="./assets/images/left-vector.png" alt="vector-left"></a>
     </section>
 
-    <section class="movie-by-genre">
+
+    <section class="movie-by-genre" id="genres">
         <h2 class="movie-by-genre-title">Movies by genre</h2>
         <ul class="genre-category">
             <li class="active">Comedy</li>
@@ -91,27 +68,20 @@
         </ul>
 
         <div class="horizontal-bar"></div>
-        <div class="latest-release">
+
+
+        <div class="genre bloc_swiper">
             <p class="category-p">Comedy</p>
             
-            <div class="display-latest-release">
-                <a href="#"><img src="./assets/images/left-vector.png" alt="vector-left"></a>
-                <div class="grid-latest-release">
-                    <div class="slide-1">
-                        <img src="./assets/images/img-slide-test.png" alt="">
-                    </div>
-                    <div class="slide-2">
-                        <img src="./assets/images/img-slide-test.png" alt="">
-                    </div>
-                    <div class="slide-3">
-                        <img src="./assets/images/img-slide-test.png" alt="">
-                    </div>
-                    <div class="slide-4">
-                        <img src="./assets/images/img-slide-test.png" alt="">
-                    </div>
-                </div>
-                <a href="#"><img src="./assets/images/right-vector.png" alt="vector-right"></a>
+            <a class="genre-next swiper-button-next" href="#">
+                <img src="./assets/images/right-vector.png" alt="vector-right"></a>
+            
+            <div class="display swiper swiper_genre ">
+                <div class="grid swiper-wrapper"></div>
             </div>
+
+            <a class="genre-prev swiper-button-prev" href="#">
+                <img src="./assets/images/left-vector.png" alt="vector-left"></a>
         </div>
 
     </section>
@@ -123,8 +93,8 @@
             </div>
             <ul>
                 <li><a href="#">Search</a></li>
-                <li><a href="#">Latest</a></li>
-                <li><a href="#">Genres</a></li>
+                <li><a href="#latest">Latest</a></li>
+                <li><a href="#genres">Genres</a></li>
                 <li><a href="#" class="open-button-register">Register</a></li>
                 <li><a href="#">Signin</a></li>
             </ul>
@@ -138,16 +108,16 @@
             <a href="#" class="signup">Signup</a>
             <a href="#" class="login">Login</a>
         </div>
-        <form>
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
+        <form class="register">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
             <div class="remember">
                 <input type="checkbox" name="remember" id="">
                 <label for="remember">Remember me</label>
             </div>    
         </form>
         <div class="bottom">
-            <button type="submit">Login</button>
+            <button class="register_btn" type="submit">Login</button>
             <div class="signup">
                 <a href="#">I forgot my password</a>
                 <p>Not a member yer ? <a href="#">Sign up</a></p>
@@ -157,12 +127,51 @@
     </dialog>
 
     <dialog class="modal-movie" id="modal-movie">
-        <img src="./assets/images/cross.png" alt="cross" class="button close-button">
-        <p>movies</p>
+        <div class="bloc_item">
+            <i class='bx bx-x-circle btn_modal_movie_off '></i>
+            <div class="movie_item">
+
+                <img src="" alt="">
+                <div class="info">
+                    <div class="infos_head">
+                        <div class="title-date">
+                            <!-- title -->
+                            <h3 class="title">The Godfather part III</h3>
+                            <!-- date -->
+                            <p class="date">1990</p>
+                            <!-- star & note -->    
+                        </div>
+                        
+                        <div class="note-info">
+                            <i class='bx bxs-star'></i> 
+                            <p class="note"></p>
+                        </div>
+                        <!-- genre -->
+                        <p class="genre"></p>
+                    </div>
+                
+
+
+                    <div class="infos_body">
+                        <p class="txt">lorem</p>
+                        <br>
+                        <p class="cast">
+                            <span>Cast: </span>
+                            <p class="actors">
+                            <!-- Will Smith, The Rock -->
+                            <!-- pas d'info -->
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </dialog>
 
-
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/signin-register.js"></script>
 
 </body>
 </html>
